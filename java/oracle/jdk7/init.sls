@@ -7,7 +7,9 @@ include:
 java_repo:
   pkgrepo:
     - managed
-    - ppa: webupd8team/java
+    - name: deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main
+    - keyid: EEA14886
+    - keyserver: keyserver.ubuntu.com
 
 # accept the license agreement for a headless install
 java_installer_selections:
