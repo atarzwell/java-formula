@@ -21,8 +21,7 @@
     - contents: 'export JAVA_HOME=/usr/java/latest'
 
 {{ settings.bashrc }}:
-  file:
-    - blockreplace
+  file.blockreplace:
     - marker_start: '{{ settings.marker_start }}'
     - marker_end: '{{ settings.marker_end }}'
     - content: |
